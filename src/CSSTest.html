@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>css学习</p>
+
+<pre>
+    style
+    td{
+    background-color: gray;
+    }
+    style
+</pre>
+
+<style>
+    td {
+        background-color: deeppink;
+    }
+
+    /*段落的颜色*/
+    p {
+        color: green;
+    }
+</style>
+
+<table border="2">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+</table>
+
+<p>this is a p</p>
+
+<p style="color: blue">在标签p中加属性style=color:blue可实现同样效果</p>
+
+<style>
+    #b1 {
+        color: rebeccapurple;
+    }
+
+    #b2 {
+        color: burlywood;
+    }
+</style>
+
+<br/>
+<p>通过id选择器选择元素，id应该唯一。且引用方式为#id属性值</p>
+<p id="b1">p1</p>
+<p id="b2">p2</p>
+
+<style>
+    .pre {
+        color: rebeccapurple;
+    }
+
+    .after {
+        color: burlywood;
+    }
+</style>
+
+<br/>
+<p>使用class属性分组选中元素，class的属性值前面加点号，作为一组元素，放到css中设置属性值 </p>
+<p class="pre">pre three element</p>
+<p class="pre">pre three element</p>
+<p class="pre">pre three element</p>
+<p class="after">after three element</p>
+<p class="after">after three element</p>
+<p class="after">after three element</p>
+
+<style>
+    p.blue {
+        color: gold;
+    }
+
+    span.blue {
+        color: aqua;
+    }
+</style>
+
+<br/>
+<p>更精准的定位元素，标签名.class属性值，定位到对应元素</p>
+<p class="blue">class=blue的p</p>
+<span class="blue">class=blue的span</span>
+
+<p>css注释/*开头，*/结束</p>
+
+<style>
+    p#percentage {
+        width: 50%;
+        height: 50%;
+        background-color: aqua;
+    }
+
+    p#pix {
+        width: 180px;
+        height: 50px;
+        background-color: burlywood;
+    }
+
+    p.gray {
+        background-color: gray;
+    }
+
+    h1 {
+        background-color: transparent;
+    }
+
+    h2 {
+        background-color: rgb(255, 0, 255);
+    }
+
+    h3 {
+        background-color: #00ff00;
+    }
+</style>
+
+<br/>
+<p>css设置宽width和高height, 背景色background-color</p>
+<p id="percentage" style="color: black">按比例设置尺寸%50宽和高</p>
+<p id="pix" style="color: black">按像素设置尺寸 180px宽 50px高</p>
+<p class="gray">gray</p>
+
+<br/>
+<p>标题设置背景色background-color</p>
+<h1>透明背景色</h1>
+<h2>紫色</h2>
+<h3>绿色</h3>
+
+
+<style>
+    div#test {
+        background-image: url("https://how2j.cn/example.gif");
+        width: 100px;
+        height: 100px;
+    }
+
+    div#no-repeat {
+        background-image: url("https://how2j.cn/example.gif");
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+    }
+
+    div#repeat {
+        background-image: url("https://how2j.cn/example.gif");
+        width: 100px;
+        height: 100px;
+        background-repeat: repeat;
+    }
+
+    div#repeat-x {
+        background-image: url("https://how2j.cn/example.gif");
+        width: 50px;
+        height: 40px;
+        background-repeat: repeat-x;
+    }
+
+
+    div#contain {
+        background-image: url("https://how2j.cn/example.gif");
+        width: 150px;
+        height: 50px;
+        background-size: contain;
+    }
+
+</style>
+
+<p>用图片做背景</p>
+<div id="test">
+    this image with background-color
+</div>
+
+<p>背景不重复</p>
+<div id="no-repeat">
+    background is not repeat
+</div>
+
+<p>背景重复</p>
+<div id="repeat">
+    background is repeat
+</div>
+
+<p>背景水平重复</p>
+<div id="repeat-x">
+    background is repeat-x
+</div>
+
+
+<p>背景平铺</p>
+<div id="contain">
+    background contain abc def abd
+</div>
+
+<style>
+    div#colorful {
+        color: pink;
+    }
+
+    div#left {
+        text-align: left;
+    }
+
+    div#right {
+        text-align: right;
+    }
+
+    div#center {
+        text-align: center;
+    }
+
+    div {
+        border: 1px gray solid;
+        margin: 10px;
+    }
+</style>
+
+<div id="colorful">
+    粉红色(字体颜色)
+</div>
+
+<div id="left">
+    左对齐
+</div>
+
+<div id="right">
+    右对齐
+</div>
+
+<div id="center">
+    居中
+</div>
+
+
+
+</body>
+</html>
