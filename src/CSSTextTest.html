@@ -34,9 +34,6 @@
         line-height: 200%;
     }
 
-    p {
-        color: green;
-    }
 </style>
 
 <h1>上划线</h1>
@@ -96,9 +93,34 @@
     abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
 </p>
 
+<style>
+    p#aa {
+        text-indent: 50px;
+    }
 
+    p.u {
+        text-transform: uppercase   ;
+    }
 
+    p.c {
+        text-transform: capitalize;
+    }
+    p.l {
+        text-transform: lowercase;
+    }
+</style>
 
+<p>没有缩进</p>
+<p id="aa">有缩进</p>
+
+<p style="color: blue">字符全部转换为大写字母:</p>
+<p class="u">abcD</p>
+
+<p style="color: blue">首字符转换为大写字母:</p>
+<p class="c">abcD</p>
+
+<p style="color: blue">首字符转换为小写字母:</p>
+<p class="l">abcD</p>
 
 </body>
 </html>
